@@ -1,0 +1,6 @@
+- configuration-driven development is changing config files like YAMLs/JSONs other than the source code like kubernetes and BIRT engine 
+- main difference between json and yaml is that json is verbose but cant handle comments where YAMLs can
+- data serialization - converts data into format that allows for easy storage, movement and reconstruction
+- pickle - for serializing and deserializing python objects, converting bytes into python objects
+- for llms they usually don't have all the parameters for a library so go back and review the documentation
+- 
