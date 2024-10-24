@@ -1,0 +1,6 @@
+- pytest is a the tool for writing scalable automation code 
+- when using the timeit function use number=1 because it will go through the functions once and if you don't set it, it will default to 1 million
+- prompting best practices - be specific, assign a role, request an expert opinion, give feedback 
+- security in llms are not so great because the models are only trained up to a certian date but for general security they are okay 
+- sqlinjection is always to worry about, using an api key people can exeute code on your database 
+- always ask for error code and vunerablilities 

@@ -1,0 +1,41 @@
+# Example 1
+
+def bubble_sort(arr):
+    """
+    Sorts an array using the bubble sort algorithm.
+
+    Args:
+        arr (list): A list of elements to be sorted.
+
+    Returns:
+        list: The sorted list in ascending order.
+    """
+    n = len(arr)  # Get the length of the array
+
+    # Iterate through each element in the array
+    for i in range(n):
+        # Last i elements are already sorted, no need to check them
+        for j in range(0, n-i-1):
+            # Compare adjacent elements
+            if arr[j] > arr[j+1]:
+                # Swap if the current element is greater than the next
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+    return arr  # Return the sorted array
+
+
+
+# Example 2
+
+import pandas as pd
+import numpy as np
+
+# Load weather data from a CSV file into a DataFrame
+weather_df = pd.read_csv('april2024_station_data.csv')  # Corrected method to read the CSV file
+
+# Convert the wind speed and wind direction columns to NumPy arrays for faster processing
+wind_speed = weather_df['wind_speed'].to_numpy()  # Extract 'wind_speed' column and convert to NumPy array
+wind_direction = weather_df['wind_direction'].to_numpy()  # Extract 'wind_direction' column and convert to NumPy array
+
+# Convert wind direction from degrees to radians using NumPy's built-in function
+wind_direction_rad = np.deg2rad(wind_direction)  # Convert degrees to radians for calculations

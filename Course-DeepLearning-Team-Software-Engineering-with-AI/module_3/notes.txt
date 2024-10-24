@@ -1,0 +1,6 @@
+- dependencies are libraries or packages that you use to build your code 
+- there could be trouble with verisons of libraries, which llms can help out with 
+- dependency management - build it in a virtual env
+- pip is poetry
+- pip freeze - will allow you to look at the verisons of each dependenices
+- for security use pip audit to make sure your depencies are safe and also allow llms to analyze it too

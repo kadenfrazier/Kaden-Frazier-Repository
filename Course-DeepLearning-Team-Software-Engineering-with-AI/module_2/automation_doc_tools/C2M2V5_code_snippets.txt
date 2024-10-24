@@ -1,0 +1,33 @@
+def calculate_area(radius):
+    """
+    Calculate the area of a circle given its radius.
+
+    The function uses the formula: A = π * r^2 where `r` is the radius of the circle.
+    
+    Parameters
+    ----------
+    radius : float
+        The radius of the circle. It should be a non-negative number.
+
+    Returns
+    -------
+    float
+        The area of the circle with the given radius.
+    
+    Raises
+    ------
+    ValueError
+        If the radius is negative.
+    
+    Examples
+    --------
+    >>> calculate_area(5)
+    78.53975
+
+    """
+    if radius < 0:
+        raise ValueError("Radius cannot be negative.")
+    
+    pi = 3.14159
+    return pi * radius * radius
+

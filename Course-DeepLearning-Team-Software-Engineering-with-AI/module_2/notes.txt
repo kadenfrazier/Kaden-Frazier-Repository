@@ -1,0 +1,3 @@
+- NEED GOOD DOCUMENTATION!!
+- docstring is the top chunck of a def to describe what the def does, need inlining and docstring in code 
+- sphinx is a great tool for documentations to put onto a html website 
